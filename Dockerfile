@@ -28,4 +28,4 @@ RUN \
         /tmp/* \
         /var/cache/apk/*
 
-CMD ["/bin/python3", "main.py"]
+CMD ["python3", "main.py"]

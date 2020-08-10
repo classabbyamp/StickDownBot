@@ -15,8 +15,8 @@ To use: [@stickdownbot](https://t.me/stickdownbot)
     ```yaml
     version: '3'
     services:
-      qrm2:
-        image: "docker.pkg.github.com/classabbyamp/StickDownBot/stickdownbot:latest"
+      bot:
+        image: "docker.pkg.github.com/classabbyamp/stickdownbot/stickdownbot:latest"
         restart: on-failure
         volumes:
           - "./data:/app/data:rw"
