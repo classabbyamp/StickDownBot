@@ -34,8 +34,8 @@ def get_sticker(update, context):
         sticker_file = sticker.get_file()
         pack = sticker.set_name
         uid = sticker.file_unique_id
-        filename = f"{pack if pack}{'_' if pack}{uid}.png"
-        caption = f"t.me/addstickers/{pack}" if pack else ""
+        filename = f"{pack if pack is not None}{'_' if pack is not None}{uid}.png"
+        caption = f"t.me/addstickers/{pack}" if pack is not None else ""
         with BytesIO() as sticker_obj:
             sticker_file.download(out=sticker_obj)
             sticker_obj.seek(0)
