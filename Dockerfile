@@ -11,6 +11,7 @@ RUN \
         g++ \
         gcc \
         libressl-dev \
+        libffi-dev \
         python3-dev && \
     echo "**** install runtime packages ****" && \
     apk add --no-cache \
