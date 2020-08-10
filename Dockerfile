@@ -8,6 +8,8 @@ ENV PYTHON_BIN python3
 RUN \
     echo "**** install build packages ****" && \
     apk add --no-cache --virtual=build-dependencies \
+        g++ \
+        gcc \
         python3-dev && \
     echo "**** install runtime packages ****" && \
     apk add --no-cache \
