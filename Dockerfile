@@ -10,6 +10,7 @@ RUN \
     apk add --no-cache --virtual=build-dependencies \
         g++ \
         gcc \
+        libressl-dev \
         python3-dev && \
     echo "**** install runtime packages ****" && \
     apk add --no-cache \
